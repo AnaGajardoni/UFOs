@@ -24,7 +24,8 @@ function handleClick() {
 
     // Filter the data
     if (date) {
-        filteredData = filteredData.filter(row => row.datetime === date)
+        filteredData = filteredData.filter(row => row.datetime === date);
+        console.log("Estou aqui");
     };
 
     // Build the table using the filtered data
