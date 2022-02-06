@@ -15,6 +15,11 @@ When the application is opened, the complete list is shown:
 
 ![Application_start](/static/images/Application_start.jpg)
 
+The user can make changes to the input on the left and, the moment he presses <ENTER>, the list on the right is updated:
+
+![Application_start_complete_list](/static/images/Application_start_complete_list.jpg)
+
+### When a selection is made:
 
 When the user makes a selection, let's suppose 'ca' for California, the sightings list is automatically refreshed:
 
@@ -27,10 +32,6 @@ In a subsequent selection, for 1/1/2010 as the date of the event, the list is re
 In one more selection, the shape of the object was selected as 'triangle', making the query (california, 1/1/2010, triangle):
 
 ![Application_search_california_1_1_2010_triangle](/static/images/Application_search_california_1_1_2010_triangle.jpg)
-
-
-
-
 
 
 ## What happens behind the scenes?
@@ -46,6 +47,7 @@ To make the HTML input controls work, a Javascript file ***(app.js)*** provides 
 3. Creates the code (functions) that will generate the new (filtered) list.
 
 Step 1. is for ***data*** initialization of the page, Step 2. is for ***control*** initialization setting controls' behaviour and, lastly, Step 3. is the code that actually makes the search and displays the filtered data according to the selections whenever an input control has any change.
+
 
 # Summmary
 Evem though the application successfully filters data and sends it to the page, I would recommend a few improvements:
