@@ -15,8 +15,6 @@ When the application is opened, the complete list is shown:
 
 ![Application_start](/static/images/Application_start.jpg)
 
-![Application_start_complete_list](/static/images/Application_start_complete_list.jpg)
-
 
 When the user makes a selection, let's suppose 'ca' for California, the sightings list is automatically refreshed:
 
