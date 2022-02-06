@@ -63,18 +63,12 @@ function updateFilters() {
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
 
-    // This was my first approach - before checking the Module
-    // Find what keys were selected and put them in an array
-    //let keysArr = [];
-    //for (var key in filters)
-    //  keysArr.push(key);
+    let keysArr = [];
+    for (var key in filters)
+      keysArr.push(key);
   
     // Filter the data for each criterion selected
-    //keysArr.forEach(function(key) {filteredData = filteredData.filter(row => row[key] === filters[key])});
-
-    Object.entries(filters).forEach(([key, value, filters]) => {
-      filteredData = filteredData.filter(row => row[key] === value)
-    })
+    keysArr.forEach(function(key) {filteredData = filteredData.filter(row => row[key] === filters[key])});
 
     // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData);
