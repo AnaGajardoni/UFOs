@@ -11,6 +11,30 @@ We built a simple, but effective web application to load the data and search it 
 
 When the application is first opened, the complete list of sightings will show allowing the user to have a broader look at the data. On the left, there will be input controls allowing the user to make his own selections, thus seeing the filtered results right away. The application gives the option to filter on date, location (city, state and country) and shape of the object seen.
 
+When the application is opened, the complete list is shown:
+
+![Application_start](/static/images/Application_start.jpg)
+
+![Application_start_complete_list](/static/images/Application_start_complete_list.jpg)
+
+
+When the user makes a selection, let's suppose 'ca' for California, the sightings list is automatically refreshed:
+
+![Application_search_california](/static/images/Application_search_california.jpg)
+
+In a subsequent selection, for 1/1/2010 as the date of the event, the list is refreshed once again:
+
+![Application_search_california_1_1_2010](/static/images/Application_search_california_1_1_2010.jpg)
+
+In one more selection, the shape of the object was selected as 'triangle', making the query (california, 1/1/2010, triangle):
+
+![Application_search_california_1_1_2010_triangle](/static/images/Application_search_california_1_1_2010_triangle.jpg)
+
+
+
+
+
+
 ## What happens behind the scenes?
 The application is a small set of HTML, CSS and Javascript files.
 
